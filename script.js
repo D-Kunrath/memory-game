@@ -15,7 +15,7 @@ btnStart.addEventListener("click", () => {
 
   for (let i = 0; i < gameBoard.children.length; i++) {
     gameBoard.children[i].addEventListener("click", (event) => {
-      game.flipCard(event.target, i);
+      game.flipCard(event.target, i, gameBoard);
     });
   }
 });
